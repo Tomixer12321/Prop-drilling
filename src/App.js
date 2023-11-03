@@ -1,4 +1,4 @@
-
+import data from "./data"
 
 const App = () => {
   return <div>
