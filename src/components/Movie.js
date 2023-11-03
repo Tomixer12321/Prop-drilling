@@ -1,4 +1,11 @@
+import MoviesContext from "./MoviesContext";
+import { useContext } from "react";
+
 const Movie = ({ movies, deleteMovie }) => {
+    const myData=useContext(MoviesContext)
+    console.log(myData)
+
+
   return (
     <div>
       {movies.map((oneMovie) => {

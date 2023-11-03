@@ -1,6 +1,7 @@
 import data from "./data"
 import MovieBox from "./components/MovieBox"
 import {useState} from "react"
+import MoviesContext from "./components/MoviesContext"
 
 const App = () => {
   const [movies,setMovies]=useState(data)
@@ -11,9 +12,9 @@ const App = () => {
     })
     setMovies(newMovieList)
   }
-  return <div>
+  return <MoviesContext.Provider value={"ahooooooj"}>
     <MovieBox movies={movies} deleteMovie={deleteMovie}/>
-  </div>
+  </MoviesContext.Provider>
 }
 
 export default App
