@@ -12,8 +12,8 @@ const App = () => {
     })
     setMovies(newMovieList)
   }
-  return <MoviesContext.Provider value={"ahooooooj"}>
-    <MovieBox movies={movies} deleteMovie={deleteMovie}/>
+  return <MoviesContext.Provider value={{deleteMovie}}>
+    <MovieBox movies={movies}/>
   </MoviesContext.Provider>
 }
 

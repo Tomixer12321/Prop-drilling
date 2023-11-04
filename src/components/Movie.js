@@ -1,9 +1,9 @@
 import MoviesContext from "./MoviesContext";
 import { useContext } from "react";
 
-const Movie = ({ movies, deleteMovie }) => {
-    const myData=useContext(MoviesContext)
-    console.log(myData)
+const Movie = ({movies}) => {
+
+    const {deleteMovie}=useContext(MoviesContext)
 
 
   return (
