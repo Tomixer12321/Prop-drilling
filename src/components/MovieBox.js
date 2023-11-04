@@ -1,8 +1,8 @@
 import Movie from "./Movie"
 
-const MovieBox = ({movies}) => {
+const MovieBox = ({}) => {
   return <div>
-    <Movie movies={movies}/>
+    <Movie/>
   </div>
 }
 
