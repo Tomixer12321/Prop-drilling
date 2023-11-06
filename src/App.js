@@ -1,9 +1,9 @@
 import Books from "./components/Books"
 
 const App = () => {
-  return (
-    <div>App</div>
-  )
+  return <div>
+    <Books />
+  </div>
 }
 
 export default App
