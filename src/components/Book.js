@@ -1,11 +1,11 @@
 import PropTypes from "prop-types"
-import defaltImage from "../images/Misko Average.jpg"
+import defaultImage from "../images/Misko Average.jpg"
 
 const Book = ({image,title,price}) => {
   return <div>
-    <h2>{title}</h2>
-    <img src={image} alt="" />
-    <p>{price} kc</p>
+    <h2>{title ||"defaultni nazev"}</h2>
+    <img src={image || defaultImage} alt="" />
+    <p>{price || 1000} kc</p>
   </div>
 }
 
@@ -14,10 +14,10 @@ Book.propTypes={
     title:PropTypes.string.isRequired,
     price:PropTypes.number.isRequired,
 }
-Book.defaultProps={
-  image:defaltImage,
-  title:"defaltni nazev",
-  price:1000,
-}
+// Book.defaultProps={
+//   image:defaltImage,
+//   title:"defaltni nazev",
+//   price:1000,
+// }
 
 export default Book
